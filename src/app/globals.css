@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #e8b923;
+  --color-gold-dark: #c9a017;
+  --color-gold-light: #f5d76e;
+  --color-ink: #070707;
+  --color-ink-2: #0d0d0d;
+  --color-ink-3: #141414;
+  --color-muted: #c9c9c9;
+  --font-display: var(--font-bebas);
+  --font-heading: var(--font-oswald);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+body {
+  background: #070707;
+  color: #f3f3f3;
+}
+
+::selection {
+  background: #e8b923;
+  color: #070707;
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #f5d76e 0%, #e8b923 45%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-border {
+  border: 1px solid rgba(232, 185, 35, 0.55);
+}
+
+.gold-btn {
+  background: linear-gradient(180deg, #f0c63a 0%, #e8b923 50%, #c9a017 100%);
+  color: #111;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(232, 185, 35, 0.22);
+}
+
+.gold-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(232, 185, 35, 0.32);
+}
+
+.card-glow:hover {
+  border-color: #e8b923;
+  box-shadow: 0 12px 40px rgba(232, 185, 35, 0.12);
+}
+
+.brush-gold {
+  background:
+    radial-gradient(ellipse at 50% 45%, rgba(232, 185, 35, 0.38) 0%, rgba(232, 185, 35, 0.08) 42%, transparent 70%),
+    conic-gradient(from 210deg at 50% 50%, transparent 0deg, rgba(201, 160, 23, 0.18) 80deg, transparent 150deg);
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.62) 42%, rgba(0, 0, 0, 0.18) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+svg {
+  overflow: visible;
+}
