@@ -66,8 +66,8 @@ export default function About() {
           </Link>
         </div>
 
-        <div className="flex justify-center overflow-visible px-4 lg:col-span-4">
-          <Logo variant="mark" className="h-auto w-full max-w-[220px]" />
+        <div className="flex justify-center overflow-visible px-2 lg:col-span-4">
+          <Logo variant="mark" className="max-w-[280px]" />
         </div>
 
         <ul className="space-y-4 lg:col-span-4">

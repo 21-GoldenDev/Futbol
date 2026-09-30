@@ -57,7 +57,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex justify-center">
-            <Logo variant="mark" className="h-auto w-full max-w-[240px]" />
+            <Logo variant="mark" className="max-w-[320px]" />
           </div>
         </div>
       </section>

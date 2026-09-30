@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 overflow-visible border-b border-white/5 bg-black/95 backdrop-blur-md">
-      <div className="mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-4 overflow-visible px-4 py-2.5 lg:grid-cols-3 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-4 overflow-visible px-4 py-2 lg:grid-cols-3 lg:px-8">
         <Link href="/" className="justify-self-start overflow-visible" onClick={() => setOpen(false)}>
           <Logo />
         </Link>
