@@ -8,13 +8,15 @@ type LogoProps = {
 export default function Logo({ className = "", variant = "header" }: LogoProps) {
   if (variant === "mark") {
     return (
-      <Image
-        src="/images/logo-mark.png"
-        alt="G7 Futbol Training"
-        width={353}
-        height={290}
-        className={`h-auto w-full max-w-[280px] object-contain ${className}`}
-      />
+      <span className={`logo-mark ${className}`}>
+        <Image
+          src="/images/logo-mark.png"
+          alt="G7 Futbol Training"
+          width={353}
+          height={290}
+          className="h-auto w-full max-w-[320px] object-contain"
+        />
+      </span>
     );
   }
 

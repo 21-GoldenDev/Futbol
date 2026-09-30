@@ -77,3 +77,34 @@ body {
 svg {
   overflow: visible;
 }
+
+.logo-mark {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-mark::before {
+  content: "";
+  position: absolute;
+  inset: 8% 4%;
+  background:
+    radial-gradient(ellipse at 50% 48%, rgba(232, 185, 35, 0.38) 0%, rgba(232, 185, 35, 0.08) 48%, transparent 74%);
+  filter: blur(10px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.logo-mark img {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: lighten;
+  -webkit-mask-image: url("/images/logo-mask.svg");
+  mask-image: url("/images/logo-mask.svg");
+  -webkit-mask-size: 118% 118%;
+  mask-size: 118% 118%;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
